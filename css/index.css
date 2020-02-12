@@ -1,0 +1,16 @@
+body {
+    background-color: #f4f4f4;
+}
+header {
+    text-align: center;
+}
+.default-img {
+    width: 30%;
+}
+.w3-ul li {
+    padding: 16px;
+}
+
+#module{
+    display: none;
+}

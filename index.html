@@ -2,15 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta name="viewport" initial-scale="1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pizzacalculator</title>
+
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="javascript/pizzacalculator.js"></script>
+
 </head>
 <body>
-    <h1>Pizza Balarina</h1>
+    <header>
+        <img class="default-img w3-margin w3-circle" src="img/pizzaCalculator.jpg" alt="pizzaria logo">
+            <div class="btn_default">
+                <div class='w3-button'>Vragen? Bel dan 088 657 2657</div>
+            </div>
+        </button>
+    </header>
+
+    <div class="w3-container">
+        <h2>Onze homestyle pizza's</h2>
+        <p>Deze pizza's kun je bij ons bestellen:</p>
+        <ul class="w3-ul w3-card-4 w3-margin-bottom">
+          <li class="w3-bar">
+            <span id="visible1" onclick="show()" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">+</span>
+            <img src="img/pizzaPepperoni.jpg" class="w3-bar-item w3-circle" style="width:125px">
+            <div class="w3-bar-item">
+              <span class="w3-large">Pizza Perpperoni</span><br>
+              <span>Deze pizza is zeer smakelijk. Heel rijkelijk belegd met extra pepperoni en kaas.</span>
+            </div>
+          </li>
+      
+          <li class="w3-bar">
+            <span id="visible2" onclick="show()" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">+</span>
+            <img src="img/pizzaMargherita.jpg" class="w3-bar-item w3-circle" style="width:125px">
+            <div class="w3-bar-item">
+              <span class="w3-large">Pizza Margherita</span><br>
+              <span>Deze pizza is voor iedereen. De tomatensaus word vers gemaakt.</span>
+            </div>
+          </li>
+      
+          <li class="w3-bar">
+            <span id="visible3" onclick="show()" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">+</span>
+            <img src="img/pizzaShoarma.png" class="w3-bar-item w3-circle" style="width:125px">
+            <div class="w3-bar-item">
+              <span class="w3-large">Pizza Shoarma</span><br>
+              <span>Deze pizza is echt een aanrader als je van shoarma houd!</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div id='module' class="w3-modal ">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <span onclick="document.getElementById('module').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <p>Some text. Some text. Some text.</p>
+            <p>Some text. Some text. Some text.</p>
+          </div>
+        </div>
+      </div>
 
 
-<script src="javascript/pizzacalculator.js"></script>
+
 </body>
 </html>
