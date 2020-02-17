@@ -8,7 +8,6 @@
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/index.css">
-    <script src="javascript/pizzacalculator.js"></script>
 
 </head>
 <body>
@@ -28,7 +27,7 @@
             <span id="visible1" onclick="show()" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">+</span>
             <img src="img/pizzaPepperoni.jpg" class="w3-bar-item w3-circle" style="width:125px">
             <div class="w3-bar-item">
-              <span class="w3-large">Pizza Perpperoni</span><br>
+              <span class="w3-large">Pizza Pepperoni</span><br>
               <span>Deze pizza is zeer smakelijk. Heel rijkelijk belegd met extra pepperoni en kaas.</span>
             </div>
           </li>
@@ -58,24 +57,41 @@
           <div class="w3-container w3-animate-zoom">
             <span onclick="document.getElementById('module').style.display='none'" class="w3-button w3-display-topright">&times;</span>
             <h3>Toppings</h3>
-            <p>Ananas</p>
-            <p>Ansjovis</p>
-            <p>Champions</p>
-            <p>Gehakt</p>
-            <p>Ham</p>
-            <p>Kaas</p>
-            <p>Mais</p>
-            <p>Mozzerella</p>
-            <p>Olijven</p>
-            <p>Paprika</p>
-            <p>Salami</p>
-            <p>Tonijn</p>
-            <p>Tomaat</p>
-            <p>Zalm</p>
+            <label for="topping">Kies een topping:</label>
+
+            <select id="extra">
+              <option selected value="none">Geen</option>
+              <option value="ananas">Ananas</option>
+              <option value="ansjovis">Ansjovis</option>
+              <option value="champions">Champions</option>
+              <option value="gehakt">Gehakt</option>
+              <option value="ham">Ham</option>
+              <option value="kaas">Kaas</option>
+              <option value="mais">Mais</option>
+              <option value="mozzerella">Mozzerella</option>
+              <option value="olijven">Olijven</option>
+              <option value="paprika">Paprika</option>
+              <option value="pepperoni">Perpperoni</option>
+              <option value="tonijn">Tonijn</option>
+              <option value="tomaat">Tomaat</option>
+              <option value="zalm">Zalm</option>
+            </select>
+
+            <h3>Pizza grootte</h3>
+
+            <select id="size">
+              <option value="small">Small</option>
+              <option value="medium" selected>Medium</option>
+              <option value="large">Large</option>
+            </select>
           </div>
+          <button id="priceBtn" class="w3-panel w3-green w3-border">
+            <h3>Voeg toe aan winkelwagen</h3>
+          </button>
         </div>
       </div>
 
+      <script src="javascript/pizzacalculator.js"></script>
 
 
 </body>

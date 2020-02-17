@@ -14,3 +14,23 @@ header {
 #module{
     display: none;
 }
+.topping {
+    margin: auto;
+    width: 20px;
+    float: left;
+}
+button.w3-button.w3-large.w3-circle.w3-teal {
+    margin-right: 0;
+    margin-left: auto;
+    display: block;
+}
+.w3-animate-zoom {
+    padding-bottom: 20px;
+}
+.w3-panel {
+    width: 100%;
+    margin: 0;
+}
+.w3-panel:hover {
+    background-color: palegreen;
+}
